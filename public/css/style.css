@@ -452,10 +452,10 @@ footer {
   display: none;
 }
 
-.tax-switch .form-check-input,
-.tax-switch .form-check-label {
+#switchCheckReverse {
   cursor: pointer;
 }
+
 
 .search-input {
   border-radius: 25px;
