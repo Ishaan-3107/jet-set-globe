@@ -440,6 +440,7 @@ footer {
   border-radius: 1rem;
   padding: 0.8rem;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .form-check-input:checked {
