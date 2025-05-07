@@ -440,7 +440,6 @@ footer {
   border-radius: 1rem;
   padding: 0.8rem;
   margin-left: 1rem;
-  cursor: pointer;
 }
 
 .form-check-input:checked {
@@ -452,13 +451,11 @@ footer {
 .tax-info {
   display: none;
 }
-/* .searchbox {
-  margin-left: 20rem;
-} */
 
 .search-input {
   border-radius: 25px;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  cursor: pointer;
 }
 
 .search-input:focus {
