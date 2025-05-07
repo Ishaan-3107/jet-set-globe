@@ -452,10 +452,14 @@ footer {
   display: none;
 }
 
+.tax-switch .form-check-input,
+.tax-switch .form-check-label {
+  cursor: pointer;
+}
+
 .search-input {
   border-radius: 25px;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  cursor: pointer;
 }
 
 .search-input:focus {
