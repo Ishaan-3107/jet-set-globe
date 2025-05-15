@@ -1,62 +1,98 @@
-# Wanderlust Web Project Installation Guide
+# Jet Set Globe 🌍
 
-This guide will walk you through the installation process for the Wanderlust web project. Follow the steps below to set up the project locally on your machine.
+**Jet Set Globe** is a full-stack web application that allows users to browse, book, and list vacation accommodations such as villas, houses, farmhouses, and more. With real-time map integration, media uploads, and seamless UI/UX, JetSetGlobe provides an intuitive platform for both renters and property listers.
 
-## Prerequisites
+## 🌐 Live Demo
 
-Before you begin, make sure you have the following installed on your system:
+🔗 [JetSetGlobe on Render](https://jet-set-globe.onrender.com)
 
-- Node.js (version 18 recommended)
-- MongoDB
-- Nodemon (installed globally)
+## 🚀 Features
 
-## Installation Steps
+- Browse vacation accommodations by location, type, and amenities
+- Add your own property listings with image uploads
+- Real-time location display using **Mapbox API**
+- Upload and manage media with **Cloudinary**
+- Authentication and authorization using **Passport.js**
+- Modern and responsive UI for an engaging user experience
+- Deployment on **Render** for continuous cloud hosting
+- Organized backend using **MVC Architecture**
 
-1. Clone the Wanderlust repository from GitHub:
+## 🛠️ Tech Stack
 
-   ```
-   git clone https://github.com/Anubhav-Tomar/WanderLust.git
-   ```
+**Frontend**:
+- HTML, CSS, JavaScript
+- EJS Templating Engine
 
-2. Set up the database:
-   - Create a `.env` file in the root directory of the project.
-   - Add the following line to the `.env` file:
+**Backend**:
+- Node.js
+- Express.js
 
-     ```
-     ATLASDB_URL=mongodb://127.0.0.1:27017/wanderlust
-     ```
+**Database**:
+- MongoDB with Mongoose
 
-3. Set up Cloudinary:
-   - Go to [Cloudinary](https://cloudinary.com/) and sign up for a free account.
-   - Once logged in, obtain your Cloudinary `CLOUD_NAME`, `CLOUD_API_KEY`, and `CLOUD_API_SECRET`.
-   - Add these values to the `.env` file:
+**Other Integrations**:
+- Passport.js for authentication
+- Cloudinary for image storage
+- Mapbox API for location mapping
+- Render for deployment
 
-     ```
-     CLOUD_NAME=your_cloud_name
-     CLOUD_API_KEY=your_api_key
-     CLOUD_API_SECRET=your_api_secret
-     ```
+## 📁 Project Structure (MVC)
 
-4. Set the secret for your Cloudinary storage:
-   - Add a `SECRET` key to your `.env` file and set it to a secure value:
+```
 
-     ```
-     SECRET=your_cloudinary_secret
-     ```
+JetSetGlobe/
+├── models/         # MongoDB models
+├── views/          # EJS templates
+├── routes/         # Express route definitions
+├── controllers/    # Business logic
+├── public/         # Static assets (CSS, JS, images)
+├── config/         # Configurations (DB, auth)
+├── app.js          # Main Express app
+├── .env            # Environment variables
 
-5. Install project dependencies using npm:
+````
 
-   ```
+## 🧪 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/jetsetglobe.git
+   cd jetsetglobe
+
+2. **Install dependencies**
+
+   ```bash
    npm install
    ```
 
-6. Run the application using Nodemon:
+3. **Set up environment variables**
 
+   Create a `.env` file with the following:
+
+   ```env
+   DB_URL=your_mongodb_connection_string
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_KEY=your_key
+   CLOUDINARY_SECRET=your_secret
+   MAPBOX_TOKEN=your_mapbox_token
+   SESSION_SECRET=your_session_secret
    ```
-   nodemon app.js
+
+4. **Run the app**
+
+   ```bash
+   npm start
    ```
 
-7. Access the project:
-   - Once the server is running, you can access the project at [http://localhost:8080](http://localhost:8080).
+5. Open your browser at `http://localhost:3000`
 
-That's it! You have successfully installed and set up the Wanderlust web project on your local machine. If you encounter any issues during the installation process, feel free to reach out for assistance. Happy traveling! 🌍✈️
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](https://i.postimg.cc/fRNKq5V9/Screenshot-2025-05-15-125754.png)
+
+### 📍 Listing Details
+![Listing Details](https://i.postimg.cc/mDCkn3zP/Screenshot-2025-05-15-130227.png)
+
+### 📍 Map View
+![Map View](https://i.postimg.cc/yxfHpWPJ/Screenshot-2025-05-15-130358.png)
