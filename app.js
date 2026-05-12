@@ -99,4 +99,9 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("./listings/error.ejs", { message });
 });
 
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Litening on port ${PORT}`);
+})
+
 module.exports = app;
